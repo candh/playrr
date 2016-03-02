@@ -6,6 +6,7 @@ A simple jQuery plugin for creating simple, lightweight and effective slideshows
 ###How to use it ?
 
 **Initialization**
+
 Just include the playrr.min.css and playrr.min.js and jQuery  into your awesome website and you're good to go.
 
     <link rel="stylesheet" type="text/css" href="../dist/playrr.min.css">
