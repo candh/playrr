@@ -45,6 +45,14 @@ Now call the plugin...
 | showControls | Constructs the controls for the playrr slideshow.  | true    | false      |
 | arrows       | Constructs the navigational arrows.                | true    | false      |
 
+**Using the options**
+	
+    $('#playrr').playrr({
+    	autoPlay : true,
+    	timer : 3000,
+    	showControls : false
+    });
+
 ###Notes
 It will be an ongoing project. Expect more options like more transition types. 
 
