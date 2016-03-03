@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta tags -->
+    <title>playrr.js &ndash; A lightweight jQuery plguin for making awesome slideshows.</title>
+    <!-- the css -->
+    <link rel="stylesheet" type="text/css" href="assets/grids.css">
+    <link rel="stylesheet" type="text/css" href="assets/playrr.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/master.css">
+</head>
+
+<body>
+    <!-- the slider here.. -->
+    <div class="playrr-wrapper">
+        <div id="playrr">
+            <div class="slide"><img src="assets/images/1.jpg"></div>
+            <div class="slide"><img src="assets/images/2.jpg"></div>
+            <div class="slide"><img src="assets/images/3.jpg"></div>
+            <div class="slide"><img src="assets/images/4.jpg"></div>
+            <div class="slide"><img src="assets/images/5.jpg"></div>
+            <div class="slide"><img src="assets/images/6.jpg"></div>
+            <div class="slide"><img src="assets/images/7.jpg"></div>
+        </div>
+        <div class="intro">
+            <h1>Playrr.js</h1>
+            <p>Simple, lightweight and effective slideshows.</p>
+        </div>
+    </div>
+    <!-- the content -->
+    <div id="content-wrapper">
+        <div class="row">
+            <div class="six candh push-by-three" style="margin-top:80px">
+                <h3>playrr.js</h3>
+                <p>A fast, simple and effective slideshow jQuery plugin that just works.</p>
+                <!-- Place this tag where you want the button to render. -->
+                <!-- Place this tag where you want the button to render. -->
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/candh/playrr/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download candh/playrr on GitHub">Download</a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/candh/playrr" data-icon="octicon-star" data-style="mega" data-count-href="/candh/playrr/stargazers" data-count-api="/repos/candh/playrr#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star candh/playrr on GitHub">Star</a>
+
+                <br/>
+                <hr>
+                <br/>
+                <h3>How to use it?</h3>
+                <h4>Initialization</h4>
+                <p>Just include the playrr.min.css and playrr.min.js and jQuery into your awesome website and you're good to go. Insert the CSS file like this</p>
+                <pre><code>&lt;link rel="stylesheet" type="text/css" href="../dist/playrr.min.css"&gt;</code></pre>
+                <p>And the jQuery and plugin like this</p>
+                <pre><code>&lt;script src=&quot;http://code.jquery.com/jquery-2.2.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;script src=&quot;../dist/playrr.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code></pre>
+                <p>Create a wrapper div with an id name of "playrr" and add more divs into it with the class of "slide" into it. Add your images in the "slide" divs. Just like this</p>
+                <pre><code>&lt;div id="playrr"&gt;
+    &lt;div class="slide"&gt;&lt;img src="assets/images/1.jpg"&gt;&lt;/div&gt;
+    &lt;div class="slide"&gt;&lt;img src="assets/images/2.jpg"&gt;&lt;/div&gt;
+    &lt;div class="slide"&gt;&lt;img src="assets/images/3.jpg"&gt;&lt;/div&gt;
+    &lt;div class="slide"&gt;&lt;img src="assets/images/4.jpg"&gt;&lt;/div&gt;
+    &lt;div class="slide"&gt;&lt;img src="assets/images/5.jpg"&gt;&lt;/div&gt;
+    &lt;div class="slide"&gt;&lt;img src="assets/images/6.jpg"&gt;&lt;/div&gt;
+    &lt;div class="slide"&gt;&lt;img src="assets/images/7.jpg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                <h4>Call the Plugin</h4>
+                <pre><code>$('#playrr').playrr();
+</code></pre>
+                <hr>
+                <br/>
+                <h3>It comes with some options</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Option Name</th>
+                            <th>Description</th>
+                            <th>Default</th>
+                            <th>Option</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>autoPlay</td>
+                            <td>When enabled, plays the slideshow automatically</td>
+                            <td>true</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>timer</td>
+                            <td>Sets the timer for the autoPlay method.</td>
+                            <td>2000</td>
+                            <td>time in ms</td>
+                        </tr>
+                        <tr>
+                            <td>showControls</td>
+                            <td>Constructs the controls for the playrr slideshow.</td>
+                            <td>true</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>arrows</td>
+                            <td>Constructs the navigational arrows.</td>
+                            <td>true</td>
+                            <td>false</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>Using the options</h4>
+                <pre><code>$('#playrr').playrr({
+    autoPlay : true,
+    timer : 3000,
+    showControls : false
+});
+</code></pre>
+                <hr>
+                <br>
+                <h3>Notes</h3>
+                <p>It will be an ongoing project. Expect more options like more transition types.</p>
+                <hr>
+                <br/>
+                <h3>Credits</h3>
+                <p>Made by <a href='http://www.haidrr.com'>Haider Ali Khichi</a> in Lahore, Pakistan. It is my first jQuery plugin. So please critique it and pull requests are very welcomed.</p>
+                <hr>
+                <br>
+                <p>This project is maintained by <a href="https://github.com/candh">candh</a></p>
+                <!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/candh" data-count-href="/candh/followers" data-count-api="/users/candh#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @candh on GitHub">Follow @candh</a>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </div>
+    <!-- the scripts -->
+    <!-- Place this tag right after the last button or just before your close body tag. -->
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    <script src="assets/jquery-2.2.1.min.js" type="text/javascript"></script>
+    <script src="assets/script.js" type="text/javascript"></script>
+    <script src="assets/playrr.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $('#playrr').playrr();
+    </script>
+</body>
+
+</html>

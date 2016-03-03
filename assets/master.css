@@ -1,0 +1,43 @@
+p {
+    color: #727272;
+}
+table td {
+	font-size: 15px;
+	color: #727272;
+}
+
+.playrr-wrapper {
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+.intro {
+	color: white;
+	top: 20%;
+	left: 10%;
+	max-width: 600px;
+	position: absolute;
+	padding: 20px;
+	clear: both;
+}
+.intro h1 {
+	font-size: 6em;
+}
+.intro p {
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1;
+}
+
+@media(max-width:800px){
+	.intro{
+		display: none;
+	}
+}
+#content-super-wrapper {
+	margin-top: 50px;
+}
+#content-super-wrapper h1,h2,h3,h4,h5,h6 {
+	color: #494949;
+}
